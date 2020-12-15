@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>::: Gestion Commande:::</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+<meta name="Content-Language" content="fr" />
+<meta name="Description" content="" />
+<meta name="Keywords" content=" Tutoriel Spring MVC-Boot-Data JPA Hibernate Bootstrap Jquery " />
+<meta name="Subject" content="" />
+<meta name="Content-Type" content="utf-8" />
+
+ <div th:replace="fragments/header :: header-css"/>
+
+</head>
+
+
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+</head>
+
+
+<body>
+
+	<div th:replace="fragments/header :: header"></div>
+
+	<div class="container">
+		<section class="h-100">
+			<div class="container h-100">
+				 
+					<div class="card-wrapper">
+
+						<div class="card card-custom  border-white border-0" style="background-color: #FFFF; box-shadow: 0 0 20px #ECE3FF; ">
+							<div class="card-body">
+								<h1>Consulter Commande</h1>
+
+								<br />
+
+
+								<div class="row">
+									<label class="col-sm-2"><b>ID</b></label>
+									<div class="col-sm-10" th:text="${commandeToShow.idCommande}"></div>
+								</div>
+
+								<div class="row">
+									<label class="col-sm-2"><b>Client</b></label>
+									<div class="col-sm-10"
+										th:text="${commandeToShow.client.nomClient}"></div>
+								</div>
+
+								<div class="row">
+									<label class="col-sm-2"><b>Produit</b></label>
+									<div class="col-sm-10" th:text="${commandeToShow.produit.marqueProduit}"></div>
+								</div>
+
+								<div class="row">
+									<label class="col-sm-2"><b>Prix</b></label>
+									<div class="col-sm-10" th:text="${commandeToShow.qteCommande}"></div>
+								</div>
+
+								<div class="row">
+									<label class="col-sm-2"><b>Date</b></label>
+									<div class="col-sm-10" th:text="${commandeToShow.dateCommande}"></div>
+								</div>
+
+								<div class="row">
+									<label class="col-sm-2"><b>Etat</b></label>
+									<div class="col-sm-10" th:text="${commandeToShow.etatCommande}"></div>
+								</div>
+
+								
+
+							</div>
+						</div>
+					</div>
+				 
+			</div>
+		</section>
+	</div>
+<!-- /.container -->
+
+<div th:replace="fragments/footer :: footer"></div>
+		
+</body>
+</html>

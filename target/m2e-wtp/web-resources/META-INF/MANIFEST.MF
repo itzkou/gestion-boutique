@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: MonProjetSpringBootData
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: KOU
+Implementation-Vendor-Id: tn.rnu.isi.MyProjectSpringBootData
+Build-Jdk: 1.8.0_221
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/MonProjetSpringBootData
+Created-By: Maven Integration for Eclipse
+Main-Class: tn.rnu.isi.Application
+
